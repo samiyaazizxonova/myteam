@@ -21,6 +21,7 @@
 }
 html{
     height: 100%;
+    scroll-behavior: smooth;
 }
 .container{
     width: 100%;
@@ -46,6 +47,9 @@ h4,
 h5,
 h6{
     font-weight: 700;
+}
+button{
+    cursor: pointer;
 }
 /* header */
 .header{
@@ -258,6 +262,15 @@ main{
         background-color: #012F34;
         color: #fff;
     }
+
+    .box2-icon:active svg path{
+        fill: #F67E7E;
+    }
+
+
+
+
+
 /* footer */
 footer{
     padding: 48px 0;
@@ -303,14 +316,11 @@ footer{
 .footer-icons{
     margin-left: 100px;
 }
-.footer-icons:active{
-    color: #F67E7E;
+.footer-icon:active svg path{
+    fill: #F67E7E;
 }
-.facebook-icon{
-    margin-right: 20px;
-}
-.p-icon{
-    margin-right: 20px;
+.footer-icon{
+    margin-left: 10px;
 }
 
 
@@ -346,7 +356,7 @@ footer{
 .img{
     width: 200px;
     height: 200px;
-    background-image: url(../images/aboutImg-1.svg);
+    background-image: url(../svg/aboutImg-1.svg);
     position: absolute;
     background-repeat: no-repeat;
     top: 245px;
@@ -465,45 +475,49 @@ footer{
     text-align: center;
     border-radius: 50%;
     color: #012F34;
-    padding-top: 6px;
+    padding-top: 5px;
     margin-left: 30px; 
 }
 .s2-text2:active{
     background-color: #F67E7E;
 }
+.about svg{
+    margin-top: 24px;
+    margin-left: 10px;
+}
 .sec2-img{
     width: 200px;
     height: 200px;
-    background-image: url(../images/aboutImg-2.svg);
+    background-image: url(../svg/aboutImg-2.svg);
     position: absolute;
     background-repeat: no-repeat;
-    right: 1470px;
+    right: 1420px;
 }
 .sec2-img2{
     width: 200px;
     height: 200px;
-    background-image: url(../images/aboutImg-3.svg);
+    background-image: url(../svg/aboutImg-3.svg);
     position: absolute;
     background-repeat: no-repeat;
     top: 1588px;
-    right: 0px;
+    right: -50px;
 }
 .section3-img{
     width: 200px;
     height: 200px;
-    background-image: url(../images/aboutImg-4.svg);
+    background-image: url(../svg/aboutImg-4.svg);
     position: absolute;
     background-repeat: no-repeat;
-    top: 1688   px;
+    top: 1688px;
     left: 0px;
 }
 .s3-img{
     width: 200px;
     height: 148px;
-    background-image: url(../images/aboutImg-5.svg);
+    background-image: url(../svg/aboutImg-5.svg);
     position: absolute;
     background-repeat: no-repeat;
-    top: 2300px;
+    top: 2282px;
     left: 0px;
 }
 .section3{
@@ -542,6 +556,7 @@ footer{
     height: 28px;
     font-size: 18px;
     line-height: 28px;
+    margin-left: 23px;
 }
 .box2{
     display: flex;
@@ -569,6 +584,54 @@ footer{
 
 
 /* contact */
+
+
+
+.main-hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 140px 0;
+}
+.label{
+    display: grid;
+}
+
+.form-box{
+    width: 540px;
+    margin-top: 30px;
+}
+.input{
+    border: none;
+    border-bottom: 2px solid white;
+    padding: 12px 20px;
+    background-color: inherit;
+}
+.input:hover{
+    border: none;
+    border-bottom: 2px solid #F67E7E;
+    padding: 12px 20px;
+    background-color: inherit;
+    color: white;
+}
+.input:active{
+    border-bottom: 2px solid white;
+}
+.textarea{
+    background-color: inherit;
+    border: none;
+    border-bottom: 2px solid white;
+}
+.textarea:hover{
+    border-bottom: 2px solid #F67E7E;
+}
+.form-btn{
+    margin-top: 30px;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 9px 32px;
+    color: #004047;
+}
 
 
 
